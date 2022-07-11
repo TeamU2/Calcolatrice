@@ -1,0 +1,29 @@
+switch(scelta)
+     {
+        case 1:
+
+            printf("\n%s %f", "La somma risulta:", op1+op2); //se avessimo usato la variabile float risultato, non sarebbe cambiato nulla in quanto avremmo aggiunto ad ogni caso -risultato = op1 + op2;
+                break;
+
+        case 2:
+
+            printf("\n%s %f", "La sottrazione risulta:", op1-op2);
+                break;
+
+        case 3:
+
+            if((op1 == 0 && op2 == 0) || op2 == 0) //cosi abbiamo controllato sia 0/0 sia numero/0 (|| è oppure)
+                puts("\nLa divisione non ha risultato.");
+            else
+
+            printf("\n%s %f", "La divisione risulta:", op1/op2); //poichè non stiamo considerando i calcoli infinesimali le forme indeterminate (0/0 1/0 ecc non si possono calcolare, quindi aggiungiamo un if)
+                break;
+
+        case 4:
+            printf("\n%s %f", "La moltiplicazione risulta:", op1*op2);
+                break;
+
+        default:    //mi serve per avvisare che la scelta compiuta dall'utente non è corretta
+            puts("\nLa scelta non e' corretta");
+                break;
+     }
