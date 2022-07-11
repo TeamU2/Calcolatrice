@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+   int scelta;                      //creiamo una variabile di scelta
+   float op1, op2;                  //operando21 e operando2 (quelli che sommeremo,divideremo,moltiplc ecc.)
+                                    //float risultato; (guarda piu' avanti) avremmo potuto metterlo ma
+    puts("Inserisci i due operandi:");
+    scanf("%f %f", &op1, &op2);
+
+    puts("\nFai una scelta:\n1. Somma\n2. Sottrazione\n3. Divisione\n4. Moltiplicazione");
+    scanf("%d", &scelta);
+
+  
