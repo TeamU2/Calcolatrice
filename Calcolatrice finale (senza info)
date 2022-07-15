@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+   int scelta;                      
+   float op1, op2;    
+   
+   puts("Inserisci i due operandi:");
+   scanf("%f %f", &op1, &op2);
+
+   puts("\nFai una scelta:\n1. Somma\n2. Sottrazione\n3. Divisione\n4. Moltiplicazione");
+   scanf("%d", &scelta);
+
+    switch(scelta)
+     {
+        case 1:
+
+            printf("\n%s %f", "La somma risulta:", op1+op2); 
+                break;
+
+        case 2:
+
+            printf("\n%s %f", "La sottrazione risulta:", op1-op2);
+                break;
+
+        case 3:
+
+            if((op1 == 0 && op2 == 0) || op2 == 0)    
+                puts("\nLa divisione non ha risultato.");
+            else
+
+            printf("\n%s %f", "La divisione risulta:", op1/op2);  
+                break;
+
+        case 4:
+            printf("\n%s %f", "La moltiplicazione risulta:", op1*op2);
+                break;
+
+        default:        
+            puts("\nLa scelta non e' corretta");
+                break;
+     }
+}
