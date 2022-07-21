@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
+int main()
 {
    int scelta;                      //creiamo una variabile di scelta
    float op1, op2;                  //operando1 e operando2 (quelli che sommeremo,divideremo,moltiplc ecc.)
